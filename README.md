@@ -9,10 +9,6 @@ LyricsFinder is a React-based web application that allows users to search for so
 -   View the lyrics of a selected song in a modal.
 -   Copy the lyrics to the clipboard with a single click.
 
-## Demo
-
-![LyricsFinder Demo](demo.gif)
-
 ## Technologies Used
 
 -   React
