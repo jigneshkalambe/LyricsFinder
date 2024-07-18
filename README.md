@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# LyricsFinder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LyricsFinder is a React-based web application that allows users to search for song lyrics. By entering a song name or artist name, users can get suggestions and view the lyrics of their chosen song.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+-   Search for songs by entering a song name or artist name.
+-   Get a list of suggested songs based on the search query.
+-   View the lyrics of a selected song in a modal.
+-   Copy the lyrics to the clipboard with a single click.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![LyricsFinder Demo](demo.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+-   React
+-   Axios
+-   Bootstrap
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Used
 
-### `npm run build`
+This project uses the [Lyrics.ovh](https://lyrics.ovh) API for fetching song suggestions and lyrics.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```sh
+    git clone https://github.com/your-username/LyricsFinder.git
+    ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```sh
+    cd LyricsFinder
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Start the development server:
 
-## Learn More
+    ```sh
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Open your browser and go to `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Enter a song name or artist name in the input field.
+2. Select a song from the suggested list.
+3. The lyrics will be displayed in a modal.
+4. Click the "Copy Lyrics" button to copy the lyrics to the clipboard.

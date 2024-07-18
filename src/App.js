@@ -70,29 +70,6 @@ const App = () => {
                 ></input>
             </div>
             <div className="d-flex flex-column gap-2 mt-3">
-                {/* Collapse */}
-                {/* {apiData?.map((val, ind) => {
-                    return (
-                        <div key={ind}>
-                            <div className="d-flex justify-content-center">
-                                <button
-                                    onClick={() => lyricsHandler(val.artist.name, val.album.title)}
-                                    className="button-30"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target={`#${ind}`}
-                                >
-                                    {val.album.title} by {val.artist.name}
-                                </button>
-                            </div>
-                            <div className="collapse" id={`${ind}`}>
-                                <div className="lyricsBox">
-                                    <pre style={{ whiteSpace: "pre-wrap", color: "black" }}>{loading ? "Lyrics are about to loading" : lyrics}</pre>
-                                </div>
-                            </div>
-                        </div>
-                    );
-                })} */}
-                {/* Collapse */}
                 {/* Accordion */}
                 {/* <div className="accordion d-flex gap-2 flex-column" id={`maincollapse`}>
                     {apiData?.map((val, ind) => {
@@ -114,6 +91,7 @@ const App = () => {
                                         <pre style={{ whiteSpace: "pre-wrap", color: "black" }}>
                                             {loading ? "Lyrics are about to loading" : lyrics}
                                         </pre>
+                                        <input className="btn btn-success d-block" type="button" onClick={copyTextHandler} value={btnText} />
                                     </div>
                                 </div>
                             </div>
